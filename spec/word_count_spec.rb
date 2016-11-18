@@ -13,4 +13,7 @@ require('word_count')
     it("Will output the number of instances of a word despite having a question mark next to it") do
       expect("What is that bird?".word_count("bird")).to(eq("The word is repeated 1 time(s)"))
     end
+    it("Will output the number of instances of word despite punctuation")do
+      expect("It's Godzilla!! And Godzilla's kid!".word_count("godzilla")).to(eq("The word is repeated 1 time(s)"))
+    end
   end

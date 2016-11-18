@@ -1,23 +1,12 @@
 class String
   define_method(:word_count) do |search_word|
     words_found = 0
-    if self.include?("?")
-        self.delete!("?")
+    punctuation_array = ["?","!",",",".","'",]
+    punctuation_array.each() do |pun|
+    if include?(pun)
+        delete!(pun)
       end
-
-
-
-# self.split()
-    # punctuation_array.each() do |pun|
-    #     if words_array.include?(pun)
-    #       words_array.delete(pun)
-    #     else
-    #       words_array.join()
-    #     end
-    #   end
-    # words_array.join()
-    # words_array.split()
-
+    end
     words_array = self.downcase().split()
     words_array.each() do |word|
       if word == search_word
