@@ -16,7 +16,7 @@ _This is a website that takes a sentence from the user, along with a word to fin
 * host it!  
     Or
 * Click the link for the live page on Heroku!
-https://tyedye105.github.io/pizza
+https://peaceful-spire-15368.herokuapp.com
 
 
 ## Known Bugs
